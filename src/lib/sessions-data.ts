@@ -1,3 +1,10 @@
+import session1 from "@/assets/session-1.jpg";
+import session2 from "@/assets/session-2.jpg";
+import session3 from "@/assets/session-3.jpg";
+import farm from "@/assets/farm.jpg";
+import barista from "@/assets/barista.jpg";
+import hero from "@/assets/hero-coffee.jpg";
+
 export type Session = {
   id: string;
   number: string;
@@ -14,18 +21,17 @@ export const upcomingSession = {
   title: "The Art of Ethiopian Naturals",
   date: "Saturday, August 16, 2026",
   time: "3:00 PM — 6:00 PM EAT",
-  venue: "The HUB Addis / Cashmere Events Space, Bole, Addis Ababa",
+  venue: "Cashmere Events Space, Bole, Addis Ababa",
   topic: "Origin, processing, and the taste of place",
   speaker: {
     name: "Hanna Neuschwander",
     role: "Q Grader · Coffee Author",
     bio: "A specialty coffee educator with 15+ years working alongside Ethiopian producers, exploring how processing shapes the cup.",
   },
-  image: "/images/events/IMG_3872.jpg",
   description:
     "Ethiopian naturals are among the most expressive coffees in the world. In this session we taste through five single-origin lots, break down processing at origin, and discuss what makes each region unmistakable.",
   learn: [
-    "How natural processing shapes flavour profiles",
+    "How natural processing shapes flavour",
     "Distinguishing Yirgacheffe, Guji, Sidamo and Harar",
     "Cupping vocabulary for tasting like a professional",
     "How to source and store naturals for your café",
@@ -36,119 +42,68 @@ export const previousSessions: Session[] = [
   {
     id: "s06",
     number: "Session 06",
-    title: "Agronomy & The Coffee Growth Lifecycle",
+    title: "Espresso: Dialing in the Perfect Shot",
     date: "July 12, 2026",
-    topic: "Plant Care · Soil · Harvest",
+    topic: "Extraction · Grind · Pressure",
     description:
-      "A deep-dive presentation exploring root systems, disease prevention, and tree development with leading Ethiopian agronomists.",
-    image: "/images/events/IMG_4046.jpg",
-    youtubeUrl: "https://youtube.com/@seedtocup_et?si=u-FwCIQngSuAsJjE",
+      "A hands-on evening exploring the variables that make or break espresso, with three roasters comparing their approaches.",
+    image: session2,
+    youtubeUrl: "#",
   },
   {
     id: "s05",
     number: "Session 05",
-    title: "Coffee, Culture & Community Networking",
+    title: "Building a Café That Lasts",
     date: "June 14, 2026",
-    topic: "Networking · Collaboration · Commerce",
+    topic: "Business · Concept · Menu",
     description:
-      "Roasters, café founders, baristas, and coffee enthusiasts gathered for an interactive networking evening and idea exchange.",
-    image: "/images/events/IMG_3971.jpg",
-    youtubeUrl: "https://youtube.com/@seedtocup_et?si=u-FwCIQngSuAsJjE",
+      "Café owners share what they wish they'd known before opening — from lease negotiation to menu engineering.",
+    image: session3,
+    youtubeUrl: "#",
   },
   {
     id: "s04",
     number: "Session 04",
-    title: "Seedling Management & Nursery Best Practices",
+    title: "From Cherry to Green: A Farmer's Perspective",
     date: "May 10, 2026",
-    topic: "Origin · Cultivation · Sustainability",
+    topic: "Origin · Sustainability",
     description:
-      "Expert guidance on cultivating healthy seedlings, shade management, and nursery stewardship for Ethiopian coffee farms.",
-    image: "/images/events/IMG_4011.jpg",
-    youtubeUrl: "https://youtube.com/@seedtocup_et?si=u-FwCIQngSuAsJjE",
+      "A conversation with three Ethiopian coffee farmers on climate, quality, and the economics behind every kilogram.",
+    image: farm,
+    youtubeUrl: "#",
   },
   {
     id: "s03",
     number: "Session 03",
-    title: "Coffee Service, Cupping & Sensory Notes",
+    title: "Latte Art & Milk Science",
     date: "April 12, 2026",
-    topic: "Sensory · Service · Barista Craft",
+    topic: "Barista Craft",
     description:
-      "Hands-on cupping session exploring regional tasting profiles, brewing temperature, and the craft of specialty coffee presentation.",
-    image: "/images/events/IMG_3938.jpg",
-    youtubeUrl: "https://youtube.com/@seedtocup_et?si=u-FwCIQngSuAsJjE",
+      "An intimate barista session with live demos on steaming, pouring, and the physics behind that perfect rosetta.",
+    image: barista,
+    youtubeUrl: "#",
   },
   {
     id: "s02",
     number: "Session 02",
-    title: "Specialty Coffee Masterclass & Panel Discussion",
+    title: "The Roaster's Ear",
     date: "March 8, 2026",
-    topic: "Industry Insights · Panel Q&A",
+    topic: "Roasting · Development",
     description:
-      "A full-house assembly of coffee minds discussing value addition, local roasting growth, and international market positioning.",
-    image: "/images/events/IMG_4004.jpg",
-    youtubeUrl: "https://youtube.com/@seedtocup_et?si=u-FwCIQngSuAsJjE",
+      "Sensory roasting — how listening, seeing, and smelling guide the development of a coffee's final character.",
+    image: session1,
+    youtubeUrl: "#",
   },
   {
     id: "s01",
     number: "Session 01",
-    title: "Inaugural Session: Discovering Seed To Cup",
+    title: "A History of Coffee in Ethiopia",
     date: "February 8, 2026",
-    topic: "Culture · Story · Vision",
+    topic: "Culture · Story",
     description:
-      "Our launch event by Cashmere Events — bringing together our founding members to celebrate Ethiopia's rich coffee heritage.",
-    image: "/images/events/IMG_4057.jpg",
-    youtubeUrl: "https://youtube.com/@seedtocup_et?si=u-FwCIQngSuAsJjE",
-  },
-];
-
-export const eventGallery = [
-  {
-    id: "g1",
-    title: "Participant Accreditation & Welcome",
-    caption: "Official Seed To Cup participant badges and registration desk",
-    image: "/images/events/IMG_3948.jpg",
-  },
-  {
-    id: "g2",
-    title: "Fresh Brew Station & Service",
-    caption: "Attendees enjoying pour-over and freshly brewed Ethiopian specialty coffee",
-    image: "/images/events/IMG_3938.jpg",
-  },
-  {
-    id: "g3",
-    title: "Coffee Tasting & Sensory Discussion",
-    caption: "Tasting notes and flavor dialogue among coffee lovers",
-    image: "/images/events/IMG_3958.jpg",
-  },
-  {
-    id: "g4",
-    title: "Community Exchange",
-    caption: "Vibrant networking between café founders, baristas and roasters",
-    image: "/images/events/IMG_3971.jpg",
-  },
-  {
-    id: "g5",
-    title: "Expert Seminar & Lecture",
-    caption: "Interactive presentations by coffee agronomists and industry leaders",
-    image: "/images/events/IMG_3876.jpg",
-  },
-  {
-    id: "g6",
-    title: "Full-House Audience",
-    caption: "Over 50 engaged attendees learning together at The HUB Addis",
-    image: "/images/events/IMG_4004.jpg",
-  },
-  {
-    id: "g7",
-    title: "Keynote Address",
-    caption: "Deep dive into Ethiopian coffee value chains and trade",
-    image: "/images/events/IMG_4057.jpg",
-  },
-  {
-    id: "g8",
-    title: "Closing & Appreciation",
-    caption: "Official closing ceremony with Seed To Cup signature stage banners",
-    image: "/images/events/IMG_4054.jpg",
+      "Our inaugural session. A journey through legend, ritual and the birthplace of coffee.",
+    image: hero,
+    youtubeUrl: "#",
   },
 ];
 
@@ -157,7 +112,7 @@ export const interestCategories = [
   "Café owner",
   "Barista",
   "Roaster",
-  "Coffee trader/exporter",
+  "Coffee trader / exporter",
   "Aspiring coffee entrepreneur",
   "Other",
 ];
