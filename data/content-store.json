@@ -128,7 +128,8 @@
     "contactEmail": "hello@seedtocup.et",
     "phone": "+251 911 234 567",
     "youtubeUrl": "https://youtube.com/@seedtocup_et?si=u-FwCIQngSuAsJjE",
-    "linkedinUrl": "https://linkedin.com/showcase/seedtocup-et"
+    "linkedinUrl": "https://linkedin.com/showcase/seedtocup-et",
+    "verifyEtApiKey": "VERIFY_BANK_ET_vLHGWekTpI4MH9XHtGL1f_k25l9rUPSfQTQN1xIobrgFaph-R-1ChrtENN-3d_sY"
   },
   "eventRegistrations": [
     {
