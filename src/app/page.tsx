@@ -127,16 +127,16 @@ export default function Home() {
             
             {/* Left 8 Cols: Large Editorial Typography */}
             <div className="lg:col-span-8 max-w-3xl fade-up">
-              <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-[#C89D66]/40 bg-[#C89D66]/10 backdrop-blur-md mb-8">
-                <span className="w-2 h-2 rounded-full bg-[#C89D66] animate-ping" />
-                <span className="text-xs uppercase tracking-[0.25em] font-medium text-[#DFC092]">
+              <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-[#2B5BA4]/50 bg-[#2B5BA4]/20 backdrop-blur-md mb-8">
+                <span className="w-2 h-2 rounded-full bg-[#4A7CC8] animate-ping" />
+                <span className="text-xs uppercase tracking-[0.25em] font-medium text-[#7AA8E8]">
                   Ethiopian Specialty Coffee Society
                 </span>
               </div>
 
               <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[5.4rem] font-serif leading-[1.04] text-[#FBF8F3] tracking-tight">
                 Every Cup <br className="hidden sm:inline" />
-                <span className="italic font-light text-[#DFC092]">Has a Story.</span>
+                <span className="italic font-light text-[#7AA8E8]">Has a Story.</span>
               </h1>
 
               <p className="mt-8 text-lg sm:text-xl md:text-2xl text-[#FBF8F3]/85 font-light leading-relaxed max-w-2xl">
@@ -170,10 +170,10 @@ export default function Home() {
             <div className="lg:col-span-4">
               <div className="rounded-2xl border border-white/15 bg-white/5 backdrop-blur-xl p-6 md:p-7 text-[#FBF8F3] shadow-2xl">
                 <div className="flex items-center justify-between pb-4 border-b border-white/10 text-xs">
-                  <span className="text-[#C89D66] font-mono uppercase tracking-widest">
+                  <span className="text-[#4A7CC8] font-mono uppercase tracking-widest">
                     Next Gathering
                   </span>
-                  <span className="px-2.5 py-0.5 rounded-full bg-[#C89D66]/20 text-[#DFC092] border border-[#C89D66]/30">
+                  <span className="px-2.5 py-0.5 rounded-full bg-[#2B5BA4]/30 text-[#7AA8E8] border border-[#2B5BA4]/50">
                     Seats Open
                   </span>
                 </div>
@@ -183,13 +183,13 @@ export default function Home() {
                   <h3 className="text-xl md:text-2xl font-serif mt-1 text-[#FBF8F3] leading-snug">
                     {upcomingSession.title}
                   </h3>
-                  <p className="text-xs text-[#DFC092] mt-2 font-mono">{upcomingSession.date}</p>
+                  <p className="text-xs text-[#4A7CC8] mt-2 font-mono">{upcomingSession.date}</p>
                   <p className="text-xs text-[#FBF8F3]/70 mt-1">{upcomingSession.venue}</p>
                 </div>
 
                 <Link
                   href="/upcoming-session"
-                  className="mt-6 flex items-center justify-between w-full pt-4 border-t border-white/10 text-xs font-semibold uppercase tracking-wider text-[#C89D66] hover:text-[#DFC092] transition-colors"
+                  className="mt-6 flex items-center justify-between w-full pt-4 border-t border-white/10 text-xs font-semibold uppercase tracking-wider text-[#4A7CC8] hover:text-[#7AA8E8] transition-colors"
                 >
                   <span>View Details & Speaker</span>
                   <span>↗</span>
@@ -231,8 +231,8 @@ export default function Home() {
               </p>
 
               {/* Mission Statement Box */}
-              <div className="mt-8 border-l-2 border-[#C89D66] pl-6 py-2 bg-[#F5EFEB]/50 rounded-r-xl">
-                <p className="text-xs uppercase tracking-[0.2em] font-semibold text-[#684E3A]">
+              <div className="mt-8 border-l-3 border-[#2B5BA4] pl-6 py-2 bg-[#F5EFEB]/70 rounded-r-xl">
+                <p className="text-xs uppercase tracking-[0.2em] font-semibold text-[#2B5BA4]">
                   Our Core Mission
                 </p>
                 <p className="mt-2 text-base md:text-lg text-[#1A1410] font-serif italic leading-relaxed">
@@ -320,7 +320,7 @@ export default function Home() {
                   sizes="(max-width: 1024px) 100vw, 55vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1A1410] via-transparent to-transparent lg:hidden" />
-                <div className="absolute top-6 left-6 rounded-full bg-[#120D0A]/85 backdrop-blur-md px-4 py-1.5 border border-[#C89D66]/40 text-xs font-mono uppercase tracking-widest text-[#DFC092]">
+                <div className="absolute top-6 left-6 rounded-full bg-[#120D0A]/85 backdrop-blur-md px-4 py-1.5 border border-[#2B5BA4]/50 text-xs font-mono uppercase tracking-widest text-[#7AA8E8]">
                   Upcoming Feature · {upcomingSession.number}
                 </div>
               </div>
@@ -328,7 +328,7 @@ export default function Home() {
               {/* Information side */}
               <div className="lg:col-span-5 p-8 md:p-12 flex flex-col justify-between">
                 <div>
-                  <div className="text-xs uppercase tracking-widest text-[#C89D66] font-mono">
+                  <div className="text-xs uppercase tracking-widest text-[#7AA8E8] font-mono">
                     {upcomingSession.date} · {upcomingSession.time}
                   </div>
                   <h3 className="mt-3 text-3xl md:text-4xl lg:text-5xl font-serif text-[#FBF8F3] leading-tight">
@@ -341,7 +341,7 @@ export default function Home() {
                   <div className="mt-8 pt-6 border-t border-white/10 space-y-3">
                     <div className="text-xs text-[#FBF8F3]/60 uppercase tracking-widest font-mono">Keynote Speaker</div>
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-[#C89D66]/20 border border-[#C89D66] flex items-center justify-center font-serif text-[#DFC092]">
+                      <div className="w-10 h-10 rounded-full bg-[#2B5BA4]/20 border border-[#2B5BA4] flex items-center justify-center font-serif text-[#7AA8E8]">
                         HN
                       </div>
                       <div>
@@ -527,8 +527,8 @@ export default function Home() {
 
             {/* Right 6 Cols: Luxury Tier Card Presentation */}
             <div className="lg:col-span-6">
-              <div className="rounded-3xl border border-[#C89D66]/40 bg-gradient-to-br from-[#231D19] to-[#120D0A] p-8 md:p-12 shadow-2xl relative">
-                <div className="absolute top-6 right-6 px-3 py-1 rounded-full bg-[#C89D66]/20 border border-[#C89D66]/40 text-xs font-mono text-[#DFC092] uppercase tracking-widest">
+              <div className="rounded-3xl border border-[#2B5BA4]/50 bg-gradient-to-br from-[#1C1613] to-[#100C09] p-8 md:p-12 shadow-2xl relative">
+                <div className="absolute top-6 right-6 px-3 py-1 rounded-full bg-[#2B5BA4]/30 border border-[#2B5BA4]/50 text-xs font-mono text-[#7AA8E8] uppercase tracking-widest">
                   Annual Pass
                 </div>
 
@@ -540,7 +540,7 @@ export default function Home() {
                 </h3>
 
                 <div className="mt-8 pb-8 border-b border-white/10 flex items-baseline gap-2">
-                  <span className="text-5xl md:text-6xl font-serif text-[#C89D66] font-normal">15,000</span>
+                  <span className="text-5xl md:text-6xl font-serif text-[#7AA8E8] font-normal">15,000</span>
                   <span className="text-xl text-[#FBF8F3]/70 font-mono">ETB / Year</span>
                 </div>
 
@@ -665,19 +665,19 @@ export default function Home() {
           {/* Verified Statistics Grid */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 pb-20 border-b border-white/10 text-center">
             <div>
-              <p className="text-5xl md:text-6xl lg:text-7xl font-serif text-[#C89D66]">12</p>
+              <p className="text-5xl md:text-6xl lg:text-7xl font-serif text-[#4A7CC8]">12</p>
               <p className="text-xs uppercase tracking-widest text-[#FBF8F3]/60 mt-3 font-mono">Sessions / Year</p>
             </div>
             <div>
-              <p className="text-5xl md:text-6xl lg:text-7xl font-serif text-[#C89D66]">500+</p>
+              <p className="text-5xl md:text-6xl lg:text-7xl font-serif text-[#4A7CC8]">500+</p>
               <p className="text-xs uppercase tracking-widest text-[#FBF8F3]/60 mt-3 font-mono">Community Attendees</p>
             </div>
             <div>
-              <p className="text-5xl md:text-6xl lg:text-7xl font-serif text-[#C89D66]">30+</p>
+              <p className="text-5xl md:text-6xl lg:text-7xl font-serif text-[#4A7CC8]">30+</p>
               <p className="text-xs uppercase tracking-widest text-[#FBF8F3]/60 mt-3 font-mono">Featured Speakers</p>
             </div>
             <div>
-              <p className="text-5xl md:text-6xl lg:text-7xl font-serif text-[#C89D66]">100%</p>
+              <p className="text-5xl md:text-6xl lg:text-7xl font-serif text-[#4A7CC8]">100%</p>
               <p className="text-xs uppercase tracking-widest text-[#FBF8F3]/60 mt-3 font-mono">Authentic Origin</p>
             </div>
           </div>

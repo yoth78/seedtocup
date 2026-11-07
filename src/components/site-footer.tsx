@@ -29,15 +29,15 @@ export function SiteFooter() {
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-[#FBF8F3]/70 font-light">
               A premium coffee education and cultural platform by Cashmere Events — connecting knowledge, heritage, and specialty coffee commerce in Ethiopia.
             </p>
-            <div className="mt-8 flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-[#C89D66]">
-              <span className="inline-block w-8 h-[1px] bg-[#C89D66]" />
+            <div className="mt-8 flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-[#4A7CC8]">
+              <span className="inline-block w-8 h-[1.5px] bg-[#2B5BA4]" />
               Addis Ababa · Ethiopia
             </div>
           </div>
 
           {/* Navigation Links */}
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#C89D66]">
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#4A7CC8]">
               Platform
             </p>
             <ul className="mt-6 flex flex-col gap-3.5 text-sm font-light">
@@ -120,7 +120,7 @@ export function SiteFooter() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm text-[#FBF8F3]/85 hover:text-[#C89D66] transition-colors"
               >
-                <span className="w-2 h-2 rounded-full bg-[#C89D66]" />
+                <span className="w-2 h-2 rounded-full bg-[#2B5BA4]" />
                 <span>YouTube (@seedtocup_et)</span>
                 <span className="text-xs text-[#FBF8F3]/40">↗</span>
               </a>
@@ -128,9 +128,9 @@ export function SiteFooter() {
                 href="https://linkedin.com/showcase/seedtocup-et"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm text-[#FBF8F3]/85 hover:text-[#C89D66] transition-colors"
+                className="inline-flex items-center gap-2 text-sm text-[#FBF8F3]/85 hover:text-[#4A7CC8] transition-colors"
               >
-                <span className="w-2 h-2 rounded-full bg-[#C89D66]" />
+                <span className="w-2 h-2 rounded-full bg-[#2B5BA4]" />
                 <span>LinkedIn Showcase</span>
                 <span className="text-xs text-[#FBF8F3]/40">↗</span>
               </a>

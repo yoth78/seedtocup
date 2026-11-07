@@ -59,8 +59,8 @@ export function SiteHeader() {
                 href={item.href}
                 className={`transition-colors duration-200 relative py-1 ${
                   isActive
-                    ? "text-[#C89D66] font-medium after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1.5px] after:bg-[#C89D66]"
-                    : "text-[#FBF8F3]/85 hover:text-[#C89D66]"
+                    ? "text-[#4A7CC8] font-medium after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-[#4A7CC8]"
+                    : "text-[#FBF8F3]/85 hover:text-[#4A7CC8]"
                 }`}
               >
                 {item.label}
@@ -114,7 +114,7 @@ export function SiteHeader() {
                 key={item.label}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="py-2 text-lg text-[#FBF8F3]/90 hover:text-[#C89D66] font-serif transition-colors"
+                className="py-2 text-lg text-[#FBF8F3]/90 hover:text-[#4A7CC8] font-serif transition-colors"
               >
                 {item.label}
               </Link>

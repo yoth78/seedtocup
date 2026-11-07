@@ -27,9 +27,12 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
 
-  /* Specialty Ethiopian Coffee Palette */
-  --color-espresso: #1A1410;
-  --color-espresso-deep: #120D0A;
+  /* Signature Seed To Cup Logo Palette */
+  --color-brand-blue: #2B5BA4;
+  --color-brand-blue-hover: #224A87;
+  --color-brand-blue-light: #4A7CC8;
+  --color-espresso: #181310;
+  --color-espresso-deep: #100C09;
   --color-charcoal: #231D19;
   --color-roast: #2E231C;
   --color-cocoa: #684E3A;
@@ -39,22 +42,24 @@
   --color-warm-ivory: #F5EFEB;
   --color-beige: #EDE5DC;
   --color-latte: #E8DFD5;
-  --color-ink: #223A68;
+  --color-ink: #2B5BA4;
 }
 
 :root {
   --radius: 0.5rem;
 
-  /* Premium specialty coffee colors */
+  /* Premium specialty coffee colors with Seed To Cup Logo Royal Cobalt Blue */
+  --brand-blue: #2B5BA4;
+  --brand-blue-hover: #224A87;
   --cream: #FBF8F3;
   --warm-ivory: #F5EFEB;
   --latte: #EDE5DC;
   --cocoa: #684E3A;
-  --espresso: #1A1410;
-  --espresso-deep: #120D0A;
+  --espresso: #181310;
+  --espresso-deep: #100C09;
   --charcoal: #231D19;
   --gold: #C89D66;
-  --ink: #1F3868;
+  --ink: #2B5BA4;
 
   --background: var(--cream);
   --foreground: var(--espresso);
@@ -62,19 +67,19 @@
   --card-foreground: var(--espresso);
   --popover: #FFFFFF;
   --popover-foreground: var(--espresso);
-  --primary: var(--espresso);
+  --primary: var(--brand-blue);
   --primary-foreground: var(--cream);
   --secondary: var(--warm-ivory);
   --secondary-foreground: var(--espresso);
   --muted: var(--latte);
   --muted-foreground: #6B5D52;
-  --accent: var(--gold);
-  --accent-foreground: var(--espresso-deep);
+  --accent: var(--brand-blue);
+  --accent-foreground: var(--cream);
   --destructive: #A32828;
   --destructive-foreground: var(--cream);
   --border: #E5DCD2;
   --input: #E5DCD2;
-  --ring: var(--gold);
+  --ring: var(--brand-blue);
 }
 
 * {
@@ -123,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.22em;
   font-size: 0.8rem;
   font-weight: 600;
-  color: var(--cocoa);
+  color: var(--brand-blue);
   display: inline-flex;
   align-items: center;
 }
@@ -131,11 +136,11 @@ h1, h2, h3, h4, h5, h6 {
 .rule {
   display: inline-block;
   width: 2rem;
-  height: 1px;
+  height: 1.5px;
   background: currentColor;
   vertical-align: middle;
   margin-right: 0.75rem;
-  opacity: 0.65;
+  opacity: 0.85;
 }
 
 .grain {
@@ -143,28 +148,28 @@ h1, h2, h3, h4, h5, h6 {
   background-size: 4px 4px;
 }
 
-/* Editorial Button Styles */
+/* Editorial Button Styles with Seed To Cup Logo Blue */
 .btn-primary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
-  background: var(--espresso);
-  color: var(--cream);
+  background: #2B5BA4;
+  color: #FFFFFF;
   padding: 0.95rem 1.95rem;
   border-radius: 9999px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 0.98rem;
   letter-spacing: 0.02em;
   transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 4px 20px -4px rgba(26, 20, 16, 0.25);
+  box-shadow: 0 4px 20px -4px rgba(43, 91, 164, 0.35);
   text-decoration: none;
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  background: var(--espresso-deep);
-  box-shadow: 0 12px 28px -6px rgba(26, 20, 16, 0.35);
+  background: #224A87;
+  box-shadow: 0 12px 28px -6px rgba(43, 91, 164, 0.5);
 }
 
 .btn-gold {
@@ -172,22 +177,22 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
-  background: #C89D66;
-  color: #120D0A;
+  background: #2B5BA4;
+  color: #FFFFFF;
   padding: 0.95rem 1.95rem;
   border-radius: 9999px;
   font-weight: 600;
   font-size: 0.98rem;
   letter-spacing: 0.02em;
   transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 4px 20px -4px rgba(200, 157, 102, 0.3);
+  box-shadow: 0 4px 20px -4px rgba(43, 91, 164, 0.35);
   text-decoration: none;
 }
 
 .btn-gold:hover {
   transform: translateY(-2px);
-  background: #DFC092;
-  box-shadow: 0 12px 30px -6px rgba(200, 157, 102, 0.45);
+  background: #224A87;
+  box-shadow: 0 12px 30px -6px rgba(43, 91, 164, 0.5);
 }
 
 .btn-outline {
@@ -195,11 +200,11 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
-  border: 1px solid rgba(26, 20, 16, 0.3);
-  color: var(--espresso);
+  border: 1.5px solid #2B5BA4;
+  color: #2B5BA4;
   padding: 0.95rem 1.95rem;
   border-radius: 9999px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 0.98rem;
   letter-spacing: 0.02em;
   transition: all 0.25s ease;
@@ -208,9 +213,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-outline:hover {
-  background: var(--espresso);
-  color: var(--cream);
-  border-color: var(--espresso);
+  background: #2B5BA4;
+  color: #FFFFFF;
+  border-color: #2B5BA4;
 }
 
 .btn-outline-light {
@@ -232,20 +237,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-outline-light:hover {
-  background: var(--cream);
-  color: var(--espresso-deep);
-  border-color: var(--cream);
+  background: #2B5BA4;
+  color: #FFFFFF;
+  border-color: #2B5BA4;
 }
 
 .btn-ghost {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--espresso);
-  font-weight: 500;
+  color: #2B5BA4;
+  font-weight: 600;
   font-size: 0.98rem;
   letter-spacing: 0.02em;
-  border-bottom: 1px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
   padding-bottom: 2px;
   transition: gap 0.25s ease, opacity 0.25s ease;
   text-decoration: none;
@@ -253,7 +258,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-ghost:hover {
   gap: 0.85rem;
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 /* Luxury card glow */
@@ -265,8 +270,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .card-editorial:hover {
   transform: translateY(-4px);
-  border-color: rgba(200, 157, 102, 0.6);
-  box-shadow: 0 20px 40px -15px rgba(26, 20, 16, 0.08);
+  border-color: rgba(43, 91, 164, 0.45);
+  box-shadow: 0 20px 40px -15px rgba(43, 91, 164, 0.12);
 }
 
 .fade-up {
