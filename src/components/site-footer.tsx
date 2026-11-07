@@ -12,11 +12,12 @@ export function SiteFooter() {
   }, []);
 
   return (
-    <footer className="border-t border-border/70 bg-espresso text-cream">
-      <div className="mx-auto max-w-7xl px-5 py-16 md:px-10 md:py-24">
-        <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
+    <footer id="contact" className="border-t border-[#2E231C] bg-[#120D0A] text-[#FBF8F3]">
+      <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-28">
+        <div className="grid gap-14 lg:grid-cols-[1.5fr_1fr_1fr_1.2fr]">
+          {/* Brand Column */}
           <div>
-            <div className="flex items-center">
+            <Link href="/" className="inline-block">
               <Image
                 src="/images/logo-white.png"
                 alt="Seed To Cup"
@@ -24,116 +25,136 @@ export function SiteFooter() {
                 height={584}
                 className="h-14 w-auto object-contain"
               />
+            </Link>
+            <p className="mt-6 max-w-sm text-sm leading-relaxed text-[#FBF8F3]/70 font-light">
+              A premium coffee education and cultural platform by Cashmere Events — connecting knowledge, heritage, and specialty coffee commerce in Ethiopia.
+            </p>
+            <div className="mt-8 flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-[#C89D66]">
+              <span className="inline-block w-8 h-[1px] bg-[#C89D66]" />
+              Addis Ababa · Ethiopia
             </div>
-            <p className="mt-5 max-w-sm text-sm leading-relaxed text-cream/75">
-              A coffee education and experience platform by Cashmere Events —
-              celebrating the journey, culture and commerce of coffee.
-            </p>
-            <p className="eyebrow mt-6 !text-cream/70">
-              <span className="rule !bg-cream/70" />
-              Coffee · Culture · Commerce
-            </p>
           </div>
 
+          {/* Navigation Links */}
           <div>
-            <p className="eyebrow !text-cream/70">
-              <span className="rule !bg-cream/70" />
-              Explore
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#C89D66]">
+              Platform
             </p>
-            <ul className="mt-4 flex flex-col gap-3 text-sm">
+            <ul className="mt-6 flex flex-col gap-3.5 text-sm font-light">
               <li>
-                <Link href="/upcoming-session" className="text-cream/80 hover:text-cream transition-colors">
+                <Link href="/" className="text-[#FBF8F3]/75 hover:text-[#C89D66] transition-colors">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="text-[#FBF8F3]/75 hover:text-[#C89D66] transition-colors">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/upcoming-session" className="text-[#FBF8F3]/75 hover:text-[#C89D66] transition-colors">
                   Upcoming Session
                 </Link>
               </li>
               <li>
-                <Link href="/sessions" className="text-cream/80 hover:text-cream transition-colors">
+                <Link href="/sessions" className="text-[#FBF8F3]/75 hover:text-[#C89D66] transition-colors">
                   Sessions Archive
                 </Link>
               </li>
               <li>
-                <Link href="/membership" className="text-cream/80 hover:text-cream transition-colors">
-                  Membership
+                <Link href="/membership" className="text-[#FBF8F3]/75 hover:text-[#C89D66] transition-colors">
+                  Membership Program
                 </Link>
               </li>
               <li>
-                <Link href="/consultation" className="text-cream/80 hover:text-cream transition-colors">
-                  Consultation
+                <Link href="/consultation" className="text-[#FBF8F3]/75 hover:text-[#C89D66] transition-colors">
+                  Coffee Consultation
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-cream/80 hover:text-cream transition-colors">
-                  About Us
+                <Link href="/register" className="text-[#FBF8F3]/75 hover:text-[#C89D66] transition-colors">
+                  Registration & Fees
                 </Link>
               </li>
             </ul>
           </div>
 
+          {/* Contact Column */}
           <div>
-            <p className="eyebrow !text-cream/70">
-              <span className="rule !bg-cream/70" />
-              Contact
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#C89D66]">
+              Get in Touch
             </p>
-            <ul className="mt-4 flex flex-col gap-3 text-sm text-cream/80">
-              <li>Addis Ababa, Ethiopia</li>
+            <ul className="mt-6 flex flex-col gap-4 text-sm font-light text-[#FBF8F3]/75">
               <li>
-                <span className="text-xs text-cream/50 uppercase tracking-widest block mb-0.5">Created by</span>
-                <span className="text-cream font-medium">Cashmere Events</span>
+                <span className="block text-xs uppercase tracking-widest text-[#FBF8F3]/40 mb-1">Location</span>
+                <span className="text-[#FBF8F3]">The HUB Addis / Bole, Addis Ababa</span>
               </li>
               <li>
-                <a href="mailto:hello@seedtocup.et" className="text-cream/80 hover:text-cream underline underline-offset-4 decoration-cream/30 transition-colors">
+                <span className="block text-xs uppercase tracking-widest text-[#FBF8F3]/40 mb-1">Direct Inquiries</span>
+                <a
+                  href="mailto:hello@seedtocup.et"
+                  className="text-[#C89D66] hover:underline underline-offset-4"
+                >
                   hello@seedtocup.et
                 </a>
               </li>
+              <li>
+                <span className="block text-xs uppercase tracking-widest text-[#FBF8F3]/40 mb-1">Curated By</span>
+                <span className="text-[#FBF8F3] font-normal">Cashmere Events</span>
+              </li>
             </ul>
           </div>
 
+          {/* Channels & Hours */}
           <div>
-            <p className="eyebrow !text-cream/70">
-              <span className="rule !bg-cream/70" />
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#C89D66]">
               Official Channels
             </p>
-            <ul className="mt-4 flex flex-col gap-3 text-sm">
-              <li>
-                <a
-                  href="https://youtube.com/@seedtocup_et?si=u-FwCIQngSuAsJjE"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-cream/80 hover:text-cream transition-colors inline-flex items-center gap-2"
-                >
-                  <span>YouTube (@seedtocup_et)</span> →
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://linkedin.com/showcase/seedtocup-et"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-cream/80 hover:text-cream transition-colors inline-flex items-center gap-2"
-                >
-                  <span>LinkedIn (Seed To Cup)</span> →
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-cream/60 hover:text-cream transition-colors inline-flex items-center gap-2"
-                >
-                  <span>Instagram</span> →
-                </a>
-              </li>
-            </ul>
+            <p className="mt-6 text-sm text-[#FBF8F3]/70 font-light leading-relaxed">
+              Watch session recordings, interviews, and cupping demos on our streaming channels.
+            </p>
+            <div className="mt-6 flex flex-col gap-3">
+              <a
+                href="https://youtube.com/@seedtocup_et?si=u-FwCIQngSuAsJjE"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm text-[#FBF8F3]/85 hover:text-[#C89D66] transition-colors"
+              >
+                <span className="w-2 h-2 rounded-full bg-[#C89D66]" />
+                <span>YouTube (@seedtocup_et)</span>
+                <span className="text-xs text-[#FBF8F3]/40">↗</span>
+              </a>
+              <a
+                href="https://linkedin.com/showcase/seedtocup-et"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm text-[#FBF8F3]/85 hover:text-[#C89D66] transition-colors"
+              >
+                <span className="w-2 h-2 rounded-full bg-[#C89D66]" />
+                <span>LinkedIn Showcase</span>
+                <span className="text-xs text-[#FBF8F3]/40">↗</span>
+              </a>
+              <a
+                href="#"
+                className="inline-flex items-center gap-2 text-sm text-[#FBF8F3]/60 hover:text-[#C89D66] transition-colors"
+              >
+                <span className="w-2 h-2 rounded-full bg-white/20" />
+                <span>Instagram Community</span>
+                <span className="text-xs text-[#FBF8F3]/40">↗</span>
+              </a>
+            </div>
           </div>
         </div>
 
-        <div className="mt-16 flex flex-col justify-between items-center gap-4 border-t border-cream/15 pt-6 text-xs text-cream/60 md:flex-row">
-          <p>© {currentYear} Seed To Cup by Cashmere Events. All rights reserved.</p>
-          <div className="flex items-center gap-4">
-            <span>Brewed with intention.</span>
+        {/* Bottom Credits & Legal */}
+        <div className="mt-18 flex flex-col justify-between items-center gap-4 border-t border-white/10 pt-8 text-xs text-[#FBF8F3]/50 md:flex-row font-light">
+          <p>© {currentYear} Seed To Cup. Powered and created by Cashmere Events. All rights reserved.</p>
+          <div className="flex items-center gap-6">
+            <span className="italic text-[#C89D66]/80 font-serif text-sm">Every Cup Has a Story.</span>
             <span>·</span>
             <Link
               href="/admin"
-              className="text-cream/50 hover:text-cream transition underline underline-offset-2"
+              className="text-[#FBF8F3]/40 hover:text-[#C89D66] transition underline underline-offset-4"
             >
               Admin Portal
             </Link>
